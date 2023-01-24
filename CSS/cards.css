@@ -1,0 +1,40 @@
+.Accordion_Menu {
+	background-image: url(../asset/src/Accordion_Menu/screen/panel_default.png);
+	background-size: 200%;
+	background-position:  -12rem -8rem;
+}
+.Accordion_Menu .banner {
+	mix-blend-mode: difference;
+}
+.Accordion_Menu:hover {
+	background-image: url(../asset/src/Accordion_Menu/screen/Accordion_Menu2.gif);
+}
+
+.Card_OS {
+	background-image: url(../asset/src/Card_OS/screen/panel_default.png);
+	background-size: 130%; 
+	background-position:  -3.5rem -3rem; 
+	background-color: #444;
+}
+.Card_OS .banner {
+	mix-blend-mode: difference;
+}
+.Card_OS:hover {
+	background-size: 101%; 
+	background-position:  0rem -1rem; 
+	background-image: url(../asset/src//Card_OS/screen/Card_OS2.gif);
+}
+
+.Custom_Checkbox_Design {
+	background-image: url(../asset/src/Custom_Checkbox_Design/screen/checkbox_off.png);
+	background-size: 400%; 
+	background-position:  -37.5rem -22rem; 
+}
+.Custom_Checkbox_Design .banner {
+	mix-blend-mode: difference;
+}
+.Custom_Checkbox_Design:hover {
+	background-size: 129%; 
+	background-position:  -4.2rem -10.4rem; 
+	background-image: url(../asset/src/Custom_Checkbox_Design/screen/Custom_Checkbox_Design2.gif);
+}

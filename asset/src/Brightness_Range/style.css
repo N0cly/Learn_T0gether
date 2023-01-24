@@ -1,0 +1,76 @@
+* { 
+	box-sizing: border-box; /* taille de la boite */
+}
+
+:root{
+	font-size: calc(48px + 20 * (100vw - 320px) / (1280 - 320)); /* taille de la police */
+}
+
+body, form{
+	display: flex; /* affichage en ligne */
+}
+
+body, input{
+	font: 1em/1.5 sans-serif; /* taille de la police */
+}
+
+body{
+	--l1: hsl(228, 9.8%, 100%); /* couleur de la range */
+	--l2: hsl(228, 9.8%, 90%); /* couleur de la range */
+	--l3: hsl(228, 9.8%, 63%); /* couleur de la range */
+
+	--p: hsl(120, 90.4%, 44.9%); /* couleur de la range */
+	--pT: hsl(120, 90.4%, 44.9%,0); /* transparent */
+
+	background-color: var(--l2); /* couleur de fond */
+	height: 100vh; /* hauteur de la page */
+}
+
+form, input[type="range"]{
+	margin: auto; /* centrage du form */
+}
+
+form{
+	height: 6em; /* hauteur du form */
+}
+
+input[type="range"], label{
+	-webkit-tap-highlight-color: transparent; /* suppression du highlight sur mobile */
+}
+
+input[type="range"]{
+	background-color: transparent;
+	border-radius: 0.75em;
+	box-shadow: -0.1em -0.1em 0.1em var(--l3) inset, 0.1em 0.1em 0.1em var(--l1) inset;/* effet d'ombre sur la range */
+	cursor: pointer; /* curseur de la range */
+	transform: rotate(-90deg); /* rotation de la range */
+	height: 1.5em;/* hauteur de la range (!! avec la rota, c'est la LARGEUR !!)*/
+	width: 6em;/* largeur de la range (!! avec la rota, c'est la HAUTEUR!!) */
+	appearance: none; /* suppression des styles par défaut */
+	-moz-appearance: none; /* suppression des styles par défaut */
+}
+
+input[type="range"]:focus{
+	outline: transparent; /* suppression de l'outline */
+}
+
+input[type="range"]::-webkit-slider-thumb{
+	border: 0; /* suppression de la bordure du thumb */
+	background:linear-gradient(var(--p), var(--p)) 70% 50%/20% 5% no-repeat, linear-gradient(var(--l2), var(--l2)) 70% 50%/20% 15% no-repeat, radial-gradient(100% 100% at 50% 50%, var(--pT) 14%, var(--p) 15% 19%, var(--pT) 20%), var(--l2); /* dégradé du thumb */
+	border-radius: 50%; /* arrondi du thumb */
+	box-shadow: -0.25em 0 0.5em var(--l3), 0.25em 0 0.5em var(--l1); /* effet d'ombre sur le thumb */
+	height: 1.5em; /* taille du thumb */
+	width: 1.5em; /* taille du thumb */
+	appearance: none; /* suppression des styles par défaut */
+} 
+
+input[type="range"]::-moz-focus-outer{
+	border: 0; /* suppression de la bordure du thumb */
+}
+label{
+	clip: rect(1px, 1px, 1px, 1px); /* suppression du label */
+	overflow: hidden; /* suppression du label */
+	position: absolute; /* suppression du label */
+	width: 1px; /* suppression du label */
+	height: 1px; /* suppression du label */
+}

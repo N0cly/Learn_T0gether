@@ -1,0 +1,129 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    height:70px;
+    justify-content: center;
+    background: transparent;
+    position: fixed;
+    transition: all 0.3s ease-out;
+    z-index: 100;
+}
+.anim-nav {
+    background: #333;
+    color: #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+.liste {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+
+.searchbar {
+    /* position: absolute;
+    right: 0; */
+    /* margin-right: 5%; */
+
+    background-color: #333;
+    color: #f1f1f1;
+    width: 20%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+
+    height: 10%;
+    padding:15px;
+    border-radius: 10px;
+}
+
+.anim-searchbar {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* ------ */
+.section_cards{
+    position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 120px 0;
+}
+
+/*Section cards*/
+.card
+{
+    /* position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    padding-top: 10rem; */
+
+    position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    flex-direction: row;
+	flex-wrap: nowrap;
+    margin: 1rem 1rem;
+}
+
+.container{
+    background-image: url(../asset/img/test.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    box-shadow: 4px 2px 10px #333;
+}
+.banner{
+    /* background-color: black;   */
+    /* opacity: .5;  */
+    width: 100vw;
+    height: 9vh;
+    backdrop-filter: blur(2px);
+    color: #e6e6e6;
+    box-shadow: 0px -.5px 5px #333;
+    padding: 5px;
+}
+
+h2{
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px #333;
+}
+h3 {
+    font-size: .748rem;
+    text-shadow: 2px 2px 4px #333;
+}
