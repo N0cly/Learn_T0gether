@@ -127,3 +127,15 @@ h3 {
     font-size: .748rem;
     text-shadow: 2px 2px 4px #333;
 }
+
+@media screen and (max-width: 450px) {
+    #searchbar{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #searchbar{
+        width: 50%;
+    }
+}
