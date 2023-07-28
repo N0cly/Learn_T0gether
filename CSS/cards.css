@@ -1,10 +1,15 @@
 
+.Accordion_Menu img{
+	width: auto;
+	height: 200%;	
+	transform: translate(-232px , -125px)
+}
 .Accordion_Menu .banner {
 	mix-blend-mode: difference;
 }
 
 .Card_OS .banner {
-	mix-blend-mode: difference;
+	mix-blend-mode:hard-light;
 	
 }
 
@@ -20,4 +25,24 @@
 	background-size: 129%; 
 	background-position:  -4.2rem -10.4rem; 
 	background-image: url(../asset/src/Custom_Checkbox_Design/screen/Custom_Checkbox_Design2.gif);
+	
 }
+
+
+.Div_Onhover_Effect img{
+	width: 125%;
+	height: auto;
+	transform: translate(-50px , -90px)
+}
+
+.Div_Onhover_Effect .banner {
+	mix-blend-mode:difference;
+}
+
+.Gradient_Drop_Shadow img{
+	width: 200%;
+	height: auto;
+	transform: translate(-200px , -130px)
+}
+.Keys_Socials{}
+

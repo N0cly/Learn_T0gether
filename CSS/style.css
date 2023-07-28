@@ -95,7 +95,8 @@ nav {
 }
 
 .container{
-    background-image: url(../asset/img/test.jpg);
+    /* background-image: url(../asset/img/test.jpg); */
+    background-color: white;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,10 +122,10 @@ nav {
 
     position: absolute;
     width: 100%;
-    height: 9vh;
+    height: 5.5vh;
     color: #e6e6e6;
     box-shadow: 0px -.5px 5px #333;
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     border-radius:  0 0 20px 20px;
     backdrop-filter: blur(4px);
 }

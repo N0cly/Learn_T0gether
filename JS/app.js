@@ -26,9 +26,10 @@ function search_modal() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     let x = document.getElementsByClassName('search');
+    let y = document.getElementsByClassName('banner')
       
     for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        if (!y[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display="none";
         }
         else {
@@ -36,3 +37,12 @@ function search_modal() {
         }
     }
 }
+
+function bg_Acc(shouldPlay) {
+    const e = document.getElementById('bg-Acc');
+    if (shouldPlay) {
+      e.src = '../asset/src/Accordion_Menu/screen/Accordion_Menu2.gif';
+    } else {
+      e.src = '../asset/src/Accordion_Menu/screen/panel_default.png';
+    }
+  }
